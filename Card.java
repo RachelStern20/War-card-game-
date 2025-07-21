@@ -1,7 +1,9 @@
 // Card class represents a playing card
-public class Card {
+public class Card 
+{
     private final String face; //face of card ("Ace", "Deuce", ...)
     private final String suit;//suit of the card ("Hearts", "Diamonds", ...)
+    
     // Two argument constructor initializes card's face and suit
     public Card(String cardFace, String cardSuit)
     {
@@ -19,7 +21,9 @@ public class Card {
     public int getCardValue() {
         String[] faces = { "Ace", "Deuce", "Three", "Four", "Five", "Six",
                 "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
-        for(int i = 0; i < faces.length; i++) {
+        
+        for(int i = 0; i < faces.length; i++) 
+        {
             if(face.equals(faces[i]))
                 return i + 1;
         }
